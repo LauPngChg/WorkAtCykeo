@@ -74,7 +74,7 @@ namespace Module_DigitalVein.WDH320S.API.Msg
                     this.byteLen = new byte[2] { receivedData[flag+1], receivedData[flag] };
                     this.ushortLen = DataConvert.Bytes_To_Ushort(this.byteLen);
                     this.extraByteMsg = null;
-                    this.child = new MessageObject_Child() ;
+                    this.child = new MessageObject_Child(this) ;
                     break;
                 default:
                     this.extraByteMsg = new byte[2] { receivedData[flag + 1], receivedData[flag] };
@@ -138,29 +138,11 @@ namespace Module_DigitalVein.WDH320S.API.Msg
                     this.crcData[i] = tempList[1];
                 tempList.Add(this.check = DataConvert.Check_Xor(this.crcData));
                 tempList.Add(End);
-                if (this.byteLen != null)
-                {
-                    tempList.Add(HEAD_CHILD);
-                    tempList.Add((byte)this.cmdCode)
-                }
-
-                this.len = this.data_Child==null?(ushort)0:(ushort)this.data_Child.Length;
-                this.frameMsg = new byte[8 + (this.len == 0 ? 0 : this.len + 5)];
-
-
-                this.frameMsg[flag++] = (byte)(0xff & this.len);
-                this.frameMsg[flag++] = (byte)((0xFF00&this.len)>>8);
-                this.frameMsg[flag++] = this.data;
-                this.frameMsg[flag++] = this.check = DataConvert.Check_Xor(DataConvert.ReadBytes(this.frameMsg, 0, 6));
-                this.frameMsg[flag++] = End;
-                if (this.len == 0)
-                    return frameMsg;
-                this.frameMsg[flag++] = HEAD_Child;
-                this.frameMsg[flag++]= (byte)this.cmdCode;
-                this.frameMsg[flag++] = devId;
-                Array.Copy(this.data_Child, 0, this.frameMsg, flag, this.len);
-                flag += this.len;
-                this.frameMsg[flag++] = End;
+                if (this.child != null)
+                    tempList.AddRange(this.child.pack());
+                this.frameMsg = new byte[tempList.Count];
+                for (int i = 0; i < tempList.Count; i++)
+                    this.frameMsg[i] = tempList[i];
                 return frameMsg;
             }
             catch { }
@@ -169,9 +151,9 @@ namespace Module_DigitalVein.WDH320S.API.Msg
         public bool CheckData()
         {
             return
-                (this.len == 0) ?
+                (this.byteLen == null) ?
                 (DataConvert.Check_Xor(this.crcData) == this.check) :
-                ((DataConvert.Check_Xor(this.crcData) == this.check) && (DataConvert.Check_Xor(this.crcData_Child) == this.check_Child));
+                ((DataConvert.Check_Xor(this.crcData) == this.check) && (DataConvert.Check_Xor(this.child.CrcData) == this.child.Check_Child));
         }
         public byte ToKey()
         {

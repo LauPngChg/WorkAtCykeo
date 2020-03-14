@@ -26,11 +26,21 @@ namespace Module_DigitalVein.WDH320S.API.Msg
             this.cmdCode_Child = msg.CmdCode;
             this.devId_Child = msg.DevId;
         }
-        public MessageObject_Child()
-        { }
         public byte[] pack()
         {
             byte[] temp = new byte[this.data_Child.Length + 5];
+            int flag = 0;
+            temp[flag] = 0x3E;
+            temp[flag++] = (byte)this.cmdCode_Child;
+            temp[flag++] = this.devId_Child;
+            if (this.data_Child == null)
+                return null;
+            Array.Copy(this.data_Child, 0, temp, flag, this.data_Child.Length);
+            flag += this.data_Child.Length;
+            this.crcData = DataConvert.ReadBytes(temp, 0, flag);
+            temp[flag++] = this.check_Child = DataConvert.Check_Xor(this.crcData);
+            temp[flag++] = 0x0D;
+            return temp;
         }
     }
 }
