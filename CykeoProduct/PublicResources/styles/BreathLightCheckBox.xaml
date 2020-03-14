@@ -1,0 +1,47 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" >
+    <Style x:Key="BreathLight" TargetType="{x:Type CheckBox}">
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type CheckBox}">
+                    <StackPanel  Height="70" Width="35" HorizontalAlignment="Center">
+                        <Ellipse Name="light1" Fill="#FFF4F4F5" HorizontalAlignment="Left"  Stroke="Black" VerticalAlignment="Top"  Height="40" Width="30" Margin="1,1,1,0"/>
+                        <Rectangle Name="path" Fill="#FF555555"  Height="10"  Stroke="Black"  Width="15"  HorizontalAlignment="Center" Margin="3.6,-3,6,0" />
+                        <ContentPresenter HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}" RecognizesAccessKey="True" SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" VerticalAlignment="{TemplateBinding VerticalContentAlignment}"/>
+                    </StackPanel>
+                    <ControlTemplate.Triggers>
+                        <Trigger Property="IsChecked" Value="True">
+                            <Setter Property="Fill" TargetName="light1" Value="#FFE8D951"/>
+                            <Setter Property="Stroke" TargetName="light1" Value="#FFE8D951"/>
+                            <Setter Property="StrokeThickness" TargetName="light1" Value="3"/>
+                        </Trigger>
+                    </ControlTemplate.Triggers>
+
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+        <Setter Property="Effect">
+            <Setter.Value>
+                <DropShadowEffect x:Name="OSE" BlurRadius="0" Color="Gray" Direction="0" Opacity="1" RenderingBias="Performance" ShadowDepth="0" >
+                    <Storyboard.TargetProperty>BlurRadius</Storyboard.TargetProperty>
+                </DropShadowEffect>
+            </Setter.Value>
+        </Setter>
+        <Style.Triggers>
+            <EventTrigger RoutedEvent="CheckBox.Checked">
+                <BeginStoryboard x:Name="Light">
+                    <Storyboard>
+                        <DoubleAnimation Storyboard.TargetProperty="(FrameworkElement.Effect).(DropShadowEffect.BlurRadius)" From="0" To="30" BeginTime="00:00:00" Duration="00:00:03" AutoReverse="True" RepeatBehavior="Forever"/>
+                        <ColorAnimationUsingKeyFrames Storyboard.TargetProperty="(FrameworkElement.Effect).(DropShadowEffect.Color)" RepeatBehavior="Forever" AutoReverse="True">
+                            <EasingColorKeyFrame KeyTime="0" Value="LightYellow"/>
+                            <EasingColorKeyFrame KeyTime="0:0:1.6" Value="DarkGoldenrod"/>
+                        </ColorAnimationUsingKeyFrames>
+                    </Storyboard>
+                </BeginStoryboard>
+            </EventTrigger>
+            <EventTrigger RoutedEvent="CheckBox.Unchecked">
+                <StopStoryboard BeginStoryboardName="Light"/>
+            </EventTrigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

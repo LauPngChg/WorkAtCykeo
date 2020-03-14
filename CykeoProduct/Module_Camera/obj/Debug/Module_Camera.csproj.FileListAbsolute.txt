@@ -1,0 +1,15 @@
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Camera\bin\Debug\Module_Camera.dll
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Camera\bin\Debug\Module_Camera.pdb
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Camera\obj\Debug\HiKvison\TPage1.g.cs
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Camera\obj\Debug\LongSe\TPage1.g.cs
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Camera\obj\Debug\Module_Camera_MarkupCompile.cache
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Camera\obj\Debug\Module_Camera_MarkupCompile.lref
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Camera\obj\Debug\HiKvison\TPage1.baml
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Camera\obj\Debug\LongSe\TPage1.baml
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Camera\obj\Debug\Module_Camera.g.resources
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Camera\obj\Debug\Module_Camera.dll
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Camera\obj\Debug\Module_Camera.pdb
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Camera\bin\Debug\PublicResources.dll
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Camera\bin\Debug\PublicResources.pdb
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Camera\obj\Debug\Module_Camera.csprojAssemblyReference.cache
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Camera\obj\Debug\Module_Camera.csproj.CopyComplete

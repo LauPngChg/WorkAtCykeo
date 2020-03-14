@@ -1,0 +1,11 @@
+F:\个人资料\C#接口\SkLockApiTest\bin\Debug\SkLockApiTest.exe
+F:\个人资料\C#接口\SkLockApiTest\bin\Debug\SkLockApiTest.pdb
+F:\个人资料\C#接口\SkLockApiTest\bin\Debug\SkLockApi.dll
+F:\个人资料\C#接口\SkLockApiTest\bin\Debug\SkLockApi.pdb
+F:\个人资料\C#接口\SkLockApiTest\obj\Debug\SkLockApiTest.csprojAssemblyReference.cache
+F:\个人资料\C#接口\SkLockApiTest\obj\Debug\SkLockApiTest.Form1.resources
+F:\个人资料\C#接口\SkLockApiTest\obj\Debug\SkLockApiTest.Properties.Resources.resources
+F:\个人资料\C#接口\SkLockApiTest\obj\Debug\SkLockApiTest.csproj.GenerateResource.cache
+F:\个人资料\C#接口\SkLockApiTest\obj\Debug\SkLockApiTest.csproj.CopyComplete
+F:\个人资料\C#接口\SkLockApiTest\obj\Debug\SkLockApiTest.exe
+F:\个人资料\C#接口\SkLockApiTest\obj\Debug\SkLockApiTest.pdb

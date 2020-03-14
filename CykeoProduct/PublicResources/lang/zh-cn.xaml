@@ -1,0 +1,52 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    xmlns:local="clr-namespace:PublicResources.lang"
+                    >
+    <!--主体部分-->
+    <sys:String x:Key="THM-0001"  >耗材柜-测试软件</sys:String>
+    <sys:String x:Key="THM-0002"  >耗材柜-演示软件</sys:String>
+    <sys:String x:Key="THM-0003"  >深圳市斯科信息技术有限公司     www.cykeo.com</sys:String>
+    <sys:String x:Key="THM-0004"  >测试模式</sys:String>
+    <sys:String x:Key="THM-0005"  >演示模式</sys:String>
+    <sys:String x:Key="THM-0006"  >SwitchEnglish</sys:String>
+    <sys:String x:Key="THM-0007"  >切换中文</sys:String>
+
+
+    <!--锁控板 LCB-->
+    <sys:String x:Key="LCB-0001"  >锁控板</sys:String>
+    <sys:String x:Key="LCB-0002">LCB-B1</sys:String>
+    <sys:String x:Key="LCB-0003">LCB-G1</sys:String>
+    <sys:String x:Key="LCB-0004">预留屏显位置</sys:String>
+    <sys:String x:Key="LCB-0005">锁1</sys:String>
+    <sys:String x:Key="LCB-0006">锁2</sys:String>
+    <sys:String x:Key="LCB-0007">灯1</sys:String>
+    <sys:String x:Key="LCB-0008">灯2</sys:String>
+    <sys:String x:Key="LCB-0009">灯3</sys:String>
+    <sys:String x:Key="LCB-0010">灯4</sys:String>
+    <sys:String x:Key="LCB-0011">设备原地址</sys:String>
+    <sys:String x:Key="LCB-0012">目标地址</sys:String>
+    <sys:String x:Key="LCB-0013">确认修改</sys:String>
+    <sys:String x:Key="LCB-0014">获取锁状态</sys:String>
+    <sys:String x:Key="LCB-0015">获取设备版本</sys:String>
+    <sys:String x:Key="LCB-0016">清空</sys:String>
+    <!--高频卡 IDC-->
+    <sys:String x:Key="IDC-0001">高频卡</sys:String>
+    <sys:String x:Key="IDC-0002">RS485</sys:String>
+    <sys:String x:Key="IDC-0003">USB</sys:String>
+    <!--指静脉DGV-->
+    <sys:String x:Key="DGV-0001">指静脉</sys:String>
+    <sys:String x:Key="DGV-0002">WDH-320-S</sys:String>
+    <!--二维码 QRC-->
+    <sys:String x:Key="QRC-0001">二维码</sys:String>
+    <sys:String x:Key="QRC-0002" >null</sys:String>
+    <!--摄像头 CMR-->
+    <sys:String x:Key="CMR-0001">摄像头</sys:String>
+    <sys:String x:Key="CMR-0002">长视</sys:String>
+    <sys:String x:Key="CMR-0003">海康</sys:String>
+    <!--读写器 UHF-->
+    <sys:String x:Key="UHF-0001">读写器</sys:String>
+    <sys:String x:Key="UHF-0002">SK-Series</sys:String>
+    <sys:String x:Key="UHF-0003">RD-Series</sys:String>
+
+</ResourceDictionary>

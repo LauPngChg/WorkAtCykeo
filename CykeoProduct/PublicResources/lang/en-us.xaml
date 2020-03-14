@@ -1,0 +1,51 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+                    xmlns:local="clr-namespace:PublicResources.lang"
+                    >
+    <!--主体部分-->
+    <sys:String x:Key="THM-0001"  >ConsumablesCabinet-Test</sys:String>
+    <sys:String x:Key="THM-0002"  >ConsumablesCabinet-Display</sys:String>
+    <sys:String x:Key="THM-0003"  >Scoot Information Technology    www.cykeo.com</sys:String>
+    <sys:String x:Key="THM-0004"  >SwitchTestMode</sys:String>
+    <sys:String x:Key="THM-0005"  >DisplayMode</sys:String>
+    <sys:String x:Key="THM-0006"  >SwitchEnglish</sys:String>
+    <sys:String x:Key="THM-0007"  >切换中文</sys:String>
+    
+    <!--锁控板 LCB-->
+    <sys:String x:Key="LCB-0001"  >ControlBoard</sys:String>
+    <sys:String x:Key="LCB-0002">LCB-B1</sys:String>
+    <sys:String x:Key="LCB-0003">LCB-G1</sys:String>
+    <sys:String x:Key="LCB-0004">Reserve screen space</sys:String>
+    <sys:String x:Key="LCB-0005">Lock1</sys:String>
+    <sys:String x:Key="LCB-0006">Lock2</sys:String>
+    <sys:String x:Key="LCB-0007">LED1</sys:String>
+    <sys:String x:Key="LCB-0008">LED2</sys:String>
+    <sys:String x:Key="LCB-0009">LED3</sys:String>
+    <sys:String x:Key="LCB-0010">LED4</sys:String>
+    <sys:String x:Key="LCB-0011">OriginalAddress</sys:String>
+    <sys:String x:Key="LCB-0012">DestinationAddress</sys:String>
+    <sys:String x:Key="LCB-0013">Update</sys:String>
+    <sys:String x:Key="LCB-0014">GetLockStatus</sys:String>
+    <sys:String x:Key="LCB-0015">GetHardWareVersion</sys:String>
+    <sys:String x:Key="LCB-0016">Clear</sys:String>
+    <!--高频卡 IDC-->
+    <sys:String x:Key="IDC-0001">IDCard</sys:String>
+    <sys:String x:Key="IDC-0002">RS485</sys:String>
+    <sys:String x:Key="IDC-0003">USB</sys:String>
+    <!--指静脉DGV-->
+    <sys:String x:Key="DGV-0001">VenaDigitalis</sys:String>
+    <sys:String x:Key="DGV-0002">WDH-320-S</sys:String>
+    <!--二维码 QRC-->
+    <sys:String x:Key="QRC-0001">QRCode</sys:String>
+    <sys:String x:Key="QRC-0002" >null</sys:String>
+    <!--摄像头 CMR-->
+    <sys:String x:Key="CMR-0001">Camera</sys:String>
+    <sys:String x:Key="CMR-0002">LongSe</sys:String>
+    <sys:String x:Key="CMR-0003">Hikvision</sys:String>
+    <!--读写器 UHF-->
+    <sys:String x:Key="UHF-0001">UHF-RFID</sys:String>
+    <sys:String x:Key="UHF-0002">SK-Series</sys:String>
+    <sys:String x:Key="UHF-0003">RD-Series</sys:String>
+
+</ResourceDictionary>

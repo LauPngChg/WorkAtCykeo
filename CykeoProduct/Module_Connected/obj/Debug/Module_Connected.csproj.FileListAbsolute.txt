@@ -1,0 +1,12 @@
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Connected\bin\Debug\Module_Connected.dll
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Connected\bin\Debug\Module_Connected.pdb
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Connected\bin\Debug\PublicResources.dll
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Connected\bin\Debug\PublicResources.pdb
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Connected\obj\Debug\Page1.g.cs
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Connected\obj\Debug\Module_Connected_MarkupCompile.cache
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Connected\obj\Debug\Module_Connected_MarkupCompile.lref
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Connected\obj\Debug\Page1.baml
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Connected\obj\Debug\Module_Connected.g.resources
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Connected\obj\Debug\Module_Connected.csproj.CopyComplete
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Connected\obj\Debug\Module_Connected.dll
+C:\Users\CyKeo\Desktop\CykeoProduct\Module_Connected\obj\Debug\Module_Connected.pdb

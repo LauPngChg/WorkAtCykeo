@@ -1,0 +1,110 @@
+﻿<Page x:Class="Module_ControlBoard.LCB_G1.TPage1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Module_ControlBoard.LCB_G1"
+      mc:Ignorable="d" 
+      Width="800" Height="600" Background="Snow"
+      Title="TPage1">
+
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/PublicResources;component/styles/BreathLightCheckBox.xaml"/>
+                <ResourceDictionary Source="/PublicResources;component/styles/LockSwitchCheckBox.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid  ShowGridLines="True">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1*"/>
+            <RowDefinition Height="7*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="1" ShowGridLines="True">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <TextBlock Grid.Column="0" Text="{DynamicResource LCB-0004}" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="50" Foreground="#50000000"></TextBlock>
+            <Grid Grid.Column="1" ShowGridLines="True">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="2*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Grid Grid.Row="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="4*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <CheckBox  x:Name="checkboxLock1" Style="{StaticResource LockSwitch}" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Grid.Row="0" Grid.Column="0" Margin="20,20,0,0" Checked="checkboxLock1_Checked"     />
+                    <CheckBox x:Name="checkboxLock2" Style="{StaticResource LockSwitch}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="1" Margin="20,20,0,0"></CheckBox>
+                    <TextBlock Text="{DynamicResource LCB-0005}" Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,0,0,0"></TextBlock>
+                    <TextBlock  Text="{DynamicResource LCB-0006}"  Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,0,0,0"></TextBlock>
+                </Grid>
+                <Grid Grid.Row="1">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*"/>
+                        <ColumnDefinition Width="1*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="4*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="4*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <CheckBox  x:Name="checkboxLED1" Style="{StaticResource BreathLight}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,25,0,0"  Grid.Row="0" Grid.Column="0" Checked="checkboxLED1_Checked" Unchecked="checkboxLED1_Checked1"></CheckBox>
+                    <CheckBox  x:Name="checkboxLED2" Style="{StaticResource BreathLight}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,25,0,0"  Grid.Row="0" Grid.Column="1" Checked="checkboxLED2_Checked"  Unchecked="checkboxLED2_Checked1"></CheckBox>
+                    <CheckBox  x:Name="checkboxLED3" Style="{StaticResource BreathLight}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,25,0,0"  Grid.Row="2" Grid.Column="0" Checked="checkboxLED3_Checked"  Unchecked="checkboxLED3_Checked1"></CheckBox>
+                    <CheckBox  x:Name="checkboxLED4" Style="{StaticResource BreathLight}" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="20,25,0,0"  Grid.Row="2" Grid.Column="1" Checked="checkboxLED4_Checked"  Unchecked="checkboxLED4_Checked1"></CheckBox>
+                    <TextBlock Text="{DynamicResource LCB-0007}" Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,0,0,0"></TextBlock>
+                    <TextBlock Text="{DynamicResource LCB-0008}" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,0,0,0"></TextBlock>
+                    <TextBlock Text="{DynamicResource LCB-0009}" Grid.Column="0" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,0,0,0"></TextBlock>
+                    <TextBlock Text="{DynamicResource LCB-0010}" Grid.Column="1" Grid.Row="3" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,0,0,0"></TextBlock>
+                </Grid>
+                <Grid Grid.Row="2">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                        <RowDefinition Height="1*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="2*"/>
+                        <ColumnDefinition Width="3*"/>
+                    </Grid.ColumnDefinitions>
+                    <ComboBox x:Name="comBoxDeviceAddress" Grid.Column="1" Grid.Row="0" Margin="0,10,20,0"></ComboBox>
+                    <ComboBox x:Name="comBoxTagAddress" Grid.Column="1" Grid.Row="1" Margin="0,10,20,0"></ComboBox>
+                    <TextBlock Text="{DynamicResource LCB-0011}" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
+                    <TextBlock Text="{DynamicResource LCB-0012}" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Bottom"></TextBlock>
+                    <Button x:Name="buttonSetAddress" Content="{DynamicResource LCB-0013}" Grid.Column="0" Grid.ColumnSpan="2" Grid.Row="2"  Margin="10,5,20,5"></Button>
+                </Grid>
+            </Grid>
+            <Button Content="Button" HorizontalAlignment="Left" Margin="130,112,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click"/>
+            <TextBlock x:Name="test" HorizontalAlignment="Left" Margin="98,182,0,0" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top"/>
+        </Grid>
+        <Grid Grid.Row="2"  Margin="0,0,0,30">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="3*"/>
+                <ColumnDefinition Width="1*"/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="textboxLog" Margin="20 0 0 0"></TextBox>
+            <Grid Grid.Column="1" >
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                    <RowDefinition Height="1*"/>
+                </Grid.RowDefinitions>
+                <Button x:Name="buttonGetLockStaus" Content="{DynamicResource LCB-0014}" Grid.Column="1" Grid.Row="0" Margin="10,10,20,0"></Button>
+                <Button x:Name="buttonGetDeviceVersion" Content="{DynamicResource LCB-0015}" Grid.Column="1" Grid.Row="1" Margin="10,10,20,0"></Button>
+                <Button x:Name="buttonClear" Content="{DynamicResource LCB-0016}" Grid.Column="1" Grid.Row="2" Margin="10,10,20,0"></Button>
+            </Grid>
+        </Grid>
+    </Grid>
+
+</Page>

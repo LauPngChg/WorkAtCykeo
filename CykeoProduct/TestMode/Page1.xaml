@@ -1,0 +1,115 @@
+﻿<Page x:Class="TestMode.Page1"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:TestMode"
+      mc:Ignorable="d" 
+      Title="Page1">
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/PublicResources;component/styles/MainTabControlStyle.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
+    <Grid x:Name="grid"  Background="#FF333333" >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="5*"/>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="20*"/>
+        </Grid.ColumnDefinitions>
+        <TabControl x:Name="MainLeftTabControl" Grid.Column="0" TabStripPlacement="Left" Background="#FF00D1E5"  Margin="0"  >
+            <TabItem x:Name="iteamControlBoard" Header="{DynamicResource LCB-0001}"  Width="80" Height="80" VerticalContentAlignment="Stretch" HorizontalContentAlignment="Stretch"  Margin="0,0,-3,0" FontWeight="Bold" Style="{DynamicResource TabItemStyle}" TextOptions.TextFormattingMode="Display" >
+                <TabItem.Background>
+                    <ImageBrush ImageSource="/PublicResources;component/images/lockcontrolboard.png"/>
+                </TabItem.Background>
+                <StackPanel Margin="5">
+                    <Label Content="{DynamicResource LCB-0002}" Foreground="White" Margin="0,6,0,6"  HorizontalContentAlignment="Center" MouseLeftButtonDown ="Label_MouseLeftButtonDown_1" />
+                    <Border>
+                        <Image Source="/PublicResources;component/images/line.png"/>
+                    </Border>
+                    <Label Content="{DynamicResource LCB-0003}" Foreground="White" Margin="0,6,0,6"  HorizontalContentAlignment="Center"  MouseLeftButtonDown ="Label_MouseLeftButtonDown_2" />
+                    <Border>
+                        <Image Source="/PublicResources;component/images/line.png"/>
+                    </Border>
+                </StackPanel>
+            </TabItem>
+            <TabItem x:Name="iteamIDCard"  Header="{DynamicResource IDC-0001}" Height="80" Margin="0,0,-3,0" Width="80" FontWeight="Bold" Style="{DynamicResource TabItemStyle}" TextOptions.TextFormattingMode="Display">
+                <TabItem.Background>
+                    <ImageBrush ImageSource="/PublicResources;component/images/idcard.png"/>
+                </TabItem.Background>
+                <StackPanel Margin="5">
+                    <Label Content="{DynamicResource IDC-0002}" Foreground="White" Margin="0,6,0,6"  HorizontalContentAlignment="Center" MouseLeftButtonDown ="Label_MouseLeftButtonDown_3"/>
+                    <Border>
+                        <Image Source="/PublicResources;component/images/line.png"/>
+                    </Border>
+                    <Label Content="{DynamicResource IDC-0003}" Foreground="White" Margin="0,6,0,6"  HorizontalContentAlignment="Center" MouseLeftButtonDown ="Label_MouseLeftButtonDown_4"/>
+                    <Border>
+                        <Image Source="/PublicResources;component/images/line.png"/>
+                    </Border>
+                </StackPanel>
+            </TabItem>
+            <TabItem  x:Name="iteamDigitalVein"  Header="{DynamicResource DGV-0001}" Height="80" Margin="0,0,-3,0" Width="80" FontWeight="Bold" Style="{DynamicResource TabItemStyle}" TextOptions.TextFormattingMode="Display"  >
+                <TabItem.Background>
+                    <ImageBrush ImageSource="/PublicResources;component/images/finger.png"/>
+                </TabItem.Background>
+                <StackPanel Margin="5">
+                    <Label Content="{DynamicResource DGV-0002}" Foreground="White" Margin="0,6,0,6"  HorizontalContentAlignment="Center" MouseLeftButtonDown ="Label_MouseLeftButtonDown_5" />
+                    <Border>
+                        <Image Source="/PublicResources;component/images/line.png"/>
+                    </Border>
+                </StackPanel>
+            </TabItem>
+            <TabItem x:Name="iteamQRCode"  Header="{DynamicResource QRC-0001}" Height="80" Margin="0,0,-3,0" Width="80" FontWeight="Bold" Style="{DynamicResource TabItemStyle}" TextOptions.TextFormattingMode="Display" >
+                <TabItem.Background>
+                    <ImageBrush ImageSource="/PublicResources;component/images/qrcode.png"/>
+                </TabItem.Background>
+                <StackPanel Margin="5">
+                    <Label Content="{DynamicResource QRC-0002}" Foreground="White" Margin="0,6,0,6"  HorizontalContentAlignment="Center"  MouseLeftButtonDown ="Label_MouseLeftButtonDown_6" />
+                    <Border>
+                        <Image Source="/PublicResources;component/images/line.png"/>
+                    </Border>
+                </StackPanel>
+            </TabItem>
+            <TabItem  x:Name="iteamCamera"  Header="{DynamicResource CMR-0001}" Height="80" Margin="0,0,-3,0" Width="80" FontWeight="Bold" Style="{DynamicResource TabItemStyle}" TextOptions.TextFormattingMode="Display" >
+                <TabItem.Background>
+                    <ImageBrush ImageSource="/PublicResources;component/images/camera.png"/>
+                </TabItem.Background>
+                <StackPanel Margin="5">
+                    <Label Content="{DynamicResource CMR-0002}" Foreground="White" Margin="0,6,0,6"  HorizontalContentAlignment="Center" MouseLeftButtonDown ="Label_MouseLeftButtonDown_7" />
+                    <Border>
+                        <Image Source="/PublicResources;component/images/line.png"/>
+                    </Border>
+                    <Label Content="{DynamicResource CMR-0003}" Foreground="White" Margin="0,6,0,6"  HorizontalContentAlignment="Center"  MouseLeftButtonDown ="Label_MouseLeftButtonDown_8"  />
+                    <Border>
+                        <Image Source="/PublicResources;component/images/line.png"/>
+                    </Border>
+                </StackPanel>
+            </TabItem>
+            <TabItem x:Name="iteamUHF_RFID"  Header="{DynamicResource UHF-0001}" Height="80" Margin="0,0,-3,0" Width="80" FontWeight="Bold" Style="{DynamicResource TabItemStyle}" TextOptions.TextFormattingMode="Display" >
+                <TabItem.Background>
+                    <ImageBrush ImageSource="/PublicResources;component/images/rfid.png"/>
+                </TabItem.Background>
+                <StackPanel Margin="5">
+                    <Label Content="{DynamicResource UHF-0002}" Foreground="White" Margin="0,6,0,6"   HorizontalContentAlignment="Center"   MouseLeftButtonDown ="Label_MouseLeftButtonDown_9" />
+                    <Border>
+                        <Image Source="/PublicResources;component/images/line.png"/>
+                    </Border>
+                    <Label Content="{DynamicResource UHF-0003}" Foreground="White" Margin="0,6,0,6"   HorizontalContentAlignment="Center"   MouseLeftButtonDown ="Label_MouseLeftButtonDown_10" />
+                    <Border>
+                        <Image Source="/PublicResources;component/images/line.png"/>
+                    </Border>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+        <Grid Grid.Column="1" Grid.ColumnSpan="2" Background="White"  >
+            <Border x:Name="spliter"   Width="32" Height="64" Margin="-8,0,0,0" Cursor="Hand" HorizontalAlignment="Left" MouseLeftButtonDown="spliter_MouseLeftButtonDown"  >
+                <Border.Background>
+                    <ImageBrush ImageSource="/PublicResources;component/images/panelexpand.png" Stretch="UniformToFill" />
+                </Border.Background>
+            </Border>
+        </Grid>
+        <Frame x:Name="pageContainer"  Grid.Column="2" ScrollViewer.CanContentScroll="True" NavigationUIVisibility="Hidden" />
+    </Grid>
+</Page>

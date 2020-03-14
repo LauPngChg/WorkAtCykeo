@@ -1,0 +1,5 @@
+F:\个人资料\C#接口\SkLockApi\SkLockApi\bin\Debug\SkLockApi.dll
+F:\个人资料\C#接口\SkLockApi\SkLockApi\bin\Debug\SkLockApi.pdb
+F:\个人资料\C#接口\SkLockApi\SkLockApi\obj\Debug\SkLockApi.dll
+F:\个人资料\C#接口\SkLockApi\SkLockApi\obj\Debug\SkLockApi.pdb
+F:\个人资料\C#接口\SkLockApi\SkLockApi\obj\Debug\SkLockApi.csprojAssemblyReference.cache
