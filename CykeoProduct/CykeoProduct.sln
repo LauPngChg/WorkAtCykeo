@@ -28,8 +28,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module_UHF_RFID", "Module_U
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Module_Connected", "Module_Connected\Module_Connected.csproj", "{E585C560-C58A-4409-BF4E-E6938E350D81}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApp1", "WpfApp1\WpfApp1.csproj", "{1F9A460D-ADB1-4825-BB46-52463C535767}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -264,26 +262,6 @@ Global
 		{E585C560-C58A-4409-BF4E-E6938E350D81}.Release|x64.Build.0 = Release|Any CPU
 		{E585C560-C58A-4409-BF4E-E6938E350D81}.Release|x86.ActiveCfg = Release|Any CPU
 		{E585C560-C58A-4409-BF4E-E6938E350D81}.Release|x86.Build.0 = Release|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Debug|ARM.Build.0 = Debug|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Debug|ARM64.ActiveCfg = Debug|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Debug|ARM64.Build.0 = Debug|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Debug|x64.Build.0 = Debug|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Debug|x86.Build.0 = Debug|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Release|Any CPU.Build.0 = Release|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Release|ARM.ActiveCfg = Release|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Release|ARM.Build.0 = Release|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Release|ARM64.ActiveCfg = Release|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Release|ARM64.Build.0 = Release|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Release|x64.ActiveCfg = Release|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Release|x64.Build.0 = Release|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Release|x86.ActiveCfg = Release|Any CPU
-		{1F9A460D-ADB1-4825-BB46-52463C535767}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

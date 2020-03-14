@@ -12,10 +12,7 @@ namespace Module_DigitalVein.WDH320S.API.Msg
         protected const byte HEAD_CHILD =0x3E;
         private eCmdCode cmdCode;
         private byte devId;
-        private byte[] byteLen;
         private ushort ushortLen;
-        private byte[] extraByteMsg;
-        private ushort  extraUshortMsg;
         private byte data;
         private eAckCode result;
         private byte check;
@@ -28,15 +25,12 @@ namespace Module_DigitalVein.WDH320S.API.Msg
 
         public eCmdCode CmdCode { get => cmdCode; set => cmdCode = value; }
         public byte DevId { get => devId; set => devId = value; }
-        public byte[] ByteLen { get => byteLen; set => byteLen = value; }
         protected ushort UshortLen { get => ushortLen; set => ushortLen = value; }
-        public byte[] ExtraByteMsg { get => extraByteMsg; set => extraByteMsg = value; }
-        protected ushort ExtraUshortMsg { get => extraUshortMsg; set => extraUshortMsg = value; }
-        public byte Data { get => data; set => data = value; }
-        public eAckCode Result { get => result; set => result = value; }
-        public byte Check { get => check; set => check = value; }
-        public byte[] CrcData { get => crcData; set => crcData = value; }
-        public byte[] FrameData { get => frameMsg; set => frameMsg = value; }
+        protected byte SetData { get => data; set => data = value; }
+        public eAckCode GetResult { get => result; set => result = value; }
+        protected byte Check { get => check; set => check = value; }
+        protected byte[] CrcData { get => crcData; set => crcData = value; }
+        protected byte[] FrameData { get => frameMsg; set => frameMsg = value; }
         public int ReturnValue { get => returnValue; set => returnValue = value; }
         public string ReturnMsg { get => returnMsg; set => returnMsg = value; }
         public MessageObject_Child Child { get => child; set => child = value; }
@@ -44,8 +38,6 @@ namespace Module_DigitalVein.WDH320S.API.Msg
 
         public MessageObject()
         {
-            this.byteLen = null;
-            this.extraByteMsg = null;
             this.devId = 0xFF;
             this.returnValue = -1;
             this.returnMsg = "None return message.";
@@ -71,18 +63,13 @@ namespace Module_DigitalVein.WDH320S.API.Msg
                 case eCmdCode.CMD_DOWNLOAD_INFOR_TEMPLATES:
                 case eCmdCode.CMD_UPLOAD_VERSION:
                 case eCmdCode.CMD_UPLOAD_SEQUENCE:
-                    this.byteLen = new byte[2] { receivedData[flag+1], receivedData[flag] };
-                    this.ushortLen = DataConvert.Bytes_To_Ushort(this.byteLen);
-                    this.extraByteMsg = null;
                     this.child = new MessageObject_Child(this) ;
                     break;
                 default:
-                    this.extraByteMsg = new byte[2] { receivedData[flag + 1], receivedData[flag] };
-                    this.extraUshortMsg = DataConvert.Bytes_To_Ushort(this.extraByteMsg);
-                    this.byteLen = null;
                     this.child = null;
                     break;
             }
+            this.ushortLen = DataConvert.Bytes_To_Ushort(new byte[2] { receivedData[flag + 1], receivedData[flag] });
             flag += 2;
             this.result = (eAckCode)receivedData[flag ++];
             this.check = receivedData[flag ++];
@@ -90,17 +77,10 @@ namespace Module_DigitalVein.WDH320S.API.Msg
                 return;
             if(this.child==null)
                 return;
-            if (receivedData[flag++] != HEAD_CHILD)
-            {
-                this.child = null;
-                return;
-            }
-            if (this.cmdCode !=(this.child.CmdCode_Child =(eCmdCode)receivedData[flag++]) )
-            {
-                this.child = null;
-                return;
-            }
-            if (this.devId != (this.child.DevId_Child = receivedData[flag++]))
+            if (this.ushortLen==0 ||
+                (receivedData[flag++] != HEAD_CHILD) || 
+                this.cmdCode != (this.child.CmdCode_Child = (eCmdCode)receivedData[flag++]) || 
+                this.devId != (this.child.DevId_Child = receivedData[flag++]))
             {
                 this.child = null;
                 return;
@@ -112,8 +92,6 @@ namespace Module_DigitalVein.WDH320S.API.Msg
             this.child.CrcData = DataConvert.ReadBytes(receivedData, 8, this.ushortLen + 3);
             this.crcData = DataConvert.ReadBytes(receivedData, 0, 6);
         }
-
-
         public virtual void CmdPacked() { }
         public virtual void CmdUnpacked() { }
         public void CmdUnpacked(byte[] cmdData)
@@ -128,10 +106,7 @@ namespace Module_DigitalVein.WDH320S.API.Msg
                 tempList.Add(HEAD);
                 tempList.Add((byte)this.cmdCode);
                 tempList.Add(this.devId);
-                if (this.byteLen != null)
-                    tempList.AddRange(this.byteLen);
-                if (this.extraByteMsg != null)
-                    tempList.AddRange(this.extraByteMsg);
+                tempList.AddRange(DataConvert.Ushort_To_RBytes(this.ushortLen)) ;
                 tempList.Add(this.data);
                 this.crcData = new byte[6];
                 for (int i = 0; i < 6; i++)
@@ -151,7 +126,7 @@ namespace Module_DigitalVein.WDH320S.API.Msg
         public bool CheckData()
         {
             return
-                (this.byteLen == null) ?
+                (this.child == null) ?
                 (DataConvert.Check_Xor(this.crcData) == this.check) :
                 ((DataConvert.Check_Xor(this.crcData) == this.check) && (DataConvert.Check_Xor(this.child.CrcData) == this.child.Check_Child));
         }

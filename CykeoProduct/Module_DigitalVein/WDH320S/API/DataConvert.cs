@@ -30,7 +30,17 @@ namespace Module_DigitalVein.WDH320S.API
                 (byte) (0xff & i),
             };
         }
-
+        /// <summary>
+        /// 转换2-1：   ushort   ->   反转的数组    如10 = {0A ，00}
+        /// </summary>
+        public static byte[] Ushort_To_RBytes(ushort i)
+        {
+            return new byte[]
+            {
+                 (byte) (0xff & i),
+                (byte)((0xff00 & i)>>8)               
+            };
+        }
         /// <summary>
         ///    转换3：   数组16   -   Ushort     如：{00，0A}  = 10（仅用于2个元素的数组转换，其他出错）
         /// </summary>

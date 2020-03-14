@@ -59,6 +59,10 @@
     <Compile Include="WDH320S\API\Msg\MessageObject_Child.cs" />
     <Compile Include="WDH320S\API\Msg\MsgObject_AcquisitionComparison_OneVsG.cs" />
     <Compile Include="WDH320S\API\Msg\MsgObject_AcquisitionComparison_OneVsN.cs" />
+    <Compile Include="WDH320S\API\Msg\MsgObject_AcquisitionComparison_OneVsOne.cs" />
+    <Compile Include="WDH320S\API\Msg\MsgObject_AcquisitionUpLoad_CreatTemplate.cs" />
+    <Compile Include="WDH320S\API\Msg\MsgObject_EndOfRegistration.cs" />
+    <Compile Include="WDH320S\API\Msg\MsgObject_SingleRegisterFinger.cs" />
     <Compile Include="WDH320S\API\Msg\RingBuffer.cs" />
     <Compile Include="WDH320S\TPage1.xaml.cs">
       <DependentUpon>TPage1.xaml</DependentUpon>
