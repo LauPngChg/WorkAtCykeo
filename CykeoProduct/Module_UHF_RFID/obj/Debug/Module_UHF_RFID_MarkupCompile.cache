@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\CyKeo\Desktop\CykeoProduct\Module_UHF_RFID\obj\Debug\
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\
 Module_UHF_RFID
 none
 false
@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 2-56698486
 
-3-129146629
-13-266169711
+4-1393572528
+13-1604515665
 RD_Series\TPage1.xaml;SK_Series\TPage1.xaml;
 
-False
+True
 

@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\CyKeo\Desktop\CykeoProduct\Module_ControlBoard\obj\Debug\
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_ControlBoard\obj\Debug\
 Module_ControlBoard
 none
 false
@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 41889510912
 
-22-873336034
-13-266169711
+23-2137761933
+13-1604515665
 LCB_B1\LPage1.xaml;LCB_B1\TPage1.xaml;LCB_G1\LPage1.xaml;LCB_G1\TPage1.xaml;
 
-False
+True
 
