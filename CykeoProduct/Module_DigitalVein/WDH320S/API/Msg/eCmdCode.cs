@@ -53,7 +53,7 @@ namespace Module_DigitalVein.WDH320S.API.Msg
         /// <summary>
         /// 上传指定手指以及对应模板
         /// </summary>
-        CMD_UOLOAD_INFOR_TEMPLATES = 0x0A,
+        CMD_UPLOAD_INFOR_TEMPLATES = 0x0A,
         /// <summary>
         /// 上传最近采集模板
         /// </summary>

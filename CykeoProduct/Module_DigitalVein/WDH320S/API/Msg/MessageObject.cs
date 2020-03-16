@@ -59,8 +59,7 @@ namespace Module_DigitalVein.WDH320S.API.Msg
                 case eCmdCode.CMD_UPLOAD_ALL_ID:
                 case eCmdCode.CMD_UPLOAD_INFOR:
                 case eCmdCode.CMD_UPLOAD_TEMPLATE:
-                case eCmdCode.CMD_UOLOAD_INFOR_TEMPLATES:
-                case eCmdCode.CMD_DOWNLOAD_INFOR_TEMPLATES:
+                case eCmdCode.CMD_UPLOAD_INFOR_TEMPLATES:
                 case eCmdCode.CMD_UPLOAD_VERSION:
                 case eCmdCode.CMD_UPLOAD_SEQUENCE:
                     this.child = new MessageObject_Child(this) ;
@@ -93,7 +92,10 @@ namespace Module_DigitalVein.WDH320S.API.Msg
             this.crcData = DataConvert.ReadBytes(receivedData, 0, 6);
         }
         public virtual void CmdPacked() { }
-        public virtual void CmdUnpacked() { }
+        public virtual void CmdUnpacked() {
+            this.ReturnValue = this.GetResult == eAckCode.ERR_SUCCESS ? 0 : -1;
+            this.ReturnMsg = this.GetResult.ToString();
+        }
         public void CmdUnpacked(byte[] cmdData)
         {
             this.CmdUnpacked();
