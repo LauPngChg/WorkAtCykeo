@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\CyKeo\Desktop\CykeoProduct\Module_IDCard\obj\Debug\
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_IDCard\obj\Debug\
 Module_IDCard
 none
 false
@@ -12,9 +12,9 @@ DEBUG;TRACE
 
 21207196509
 
-4584083652
-13-266169711
+16-333865479
+13-1604515665
 HFR_G1_RS485\TPage1.xaml;HFR_G2_USB\TPage1.xaml;
 
-True
+False
 

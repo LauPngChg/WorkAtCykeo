@@ -46,6 +46,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="HFR_G1_RS485\API\Connected\ConnectedBase.cs" />
+    <Compile Include="HFR_G1_RS485\API\Connected\ConnectedMethod.cs" />
+    <Compile Include="HFR_G1_RS485\API\Connected\ConnectedTypeSerial.cs" />
+    <Compile Include="HFR_G1_RS485\API\DataConvert.cs" />
+    <Compile Include="HFR_G1_RS485\API\DelegateEvents.cs" />
+    <Compile Include="HFR_G1_RS485\API\ManualReset.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\eCmdType.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\eReturnStatusType.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\eReturnStatus.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MessageObject.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MessageObject_Child.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\RingBuffer.cs" />
     <Compile Include="HFR_G1_RS485\TPage1.xaml.cs">
       <DependentUpon>TPage1.xaml</DependentUpon>
     </Compile>
@@ -70,5 +82,6 @@
       <Name>PublicResources</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
