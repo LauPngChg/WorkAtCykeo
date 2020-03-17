@@ -28,7 +28,8 @@ namespace Module_DigitalVein.WDH320S.API.Msg
         }
         public override void CmdUnpacked()
         {
-            base.CmdUnpacked();
+            this.ReturnValue = this.GetResult == eAckCode.ERR_SUCCESS ? 0 : -1;
+            this.ReturnMsg = this.GetResult.ToString();
             if (base.Child != null)
                 this.temp = base.Child.Data_Child;
         }

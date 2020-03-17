@@ -25,12 +25,12 @@ namespace Module_DigitalVein.WDH320S.API.Msg
 
         public eCmdCode CmdCode { get => cmdCode; set => cmdCode = value; }
         public byte DevId { get => devId; set => devId = value; }
-        protected ushort UshortLen { get => ushortLen; set => ushortLen = value; }
-        protected byte SetData { get => data; set => data = value; }
+        internal ushort UshortLen { get => ushortLen; set => ushortLen = value; }
+        internal byte SetData { get => data; set => data = value; }
         public eAckCode GetResult { get => result; set => result = value; }
         protected byte Check { get => check; set => check = value; }
         protected byte[] CrcData { get => crcData; set => crcData = value; }
-        protected byte[] FrameData { get => frameMsg; set => frameMsg = value; }
+        internal byte[] FrameData { get => frameMsg; set => frameMsg = value; }
         public int ReturnValue { get => returnValue; set => returnValue = value; }
         public string ReturnMsg { get => returnMsg; set => returnMsg = value; }
         public MessageObject_Child Child { get => child; set => child = value; }
@@ -92,9 +92,8 @@ namespace Module_DigitalVein.WDH320S.API.Msg
             this.crcData = DataConvert.ReadBytes(receivedData, 0, 6);
         }
         public virtual void CmdPacked() { }
-        public virtual void CmdUnpacked() {
-            this.ReturnValue = this.GetResult == eAckCode.ERR_SUCCESS ? 0 : -1;
-            this.ReturnMsg = this.GetResult.ToString();
+        public virtual void CmdUnpacked()
+        {
         }
         public void CmdUnpacked(byte[] cmdData)
         {
@@ -112,7 +111,7 @@ namespace Module_DigitalVein.WDH320S.API.Msg
                 tempList.Add(this.data);
                 this.crcData = new byte[6];
                 for (int i = 0; i < 6; i++)
-                    this.crcData[i] = tempList[1];
+                    this.crcData[i] = tempList[i];
                 tempList.Add(this.check = DataConvert.Check_Xor(this.crcData));
                 tempList.Add(End);
                 if (this.child != null)
@@ -132,9 +131,9 @@ namespace Module_DigitalVein.WDH320S.API.Msg
                 (DataConvert.Check_Xor(this.crcData) == this.check) :
                 ((DataConvert.Check_Xor(this.crcData) == this.check) && (DataConvert.Check_Xor(this.child.CrcData) == this.child.Check_Child));
         }
-        public byte ToKey()
+        public string ToKey()
         {
-            return (byte)this.cmdCode;
+            return this.cmdCode.ToString();
         }
     }
 }

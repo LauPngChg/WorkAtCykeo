@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Module_DigitalVein.WDH320S.API
 {
-    class DelegateEvents
-    {
-    }
+    public delegate void delegateMessageReceived(Msg.MessageObject messageMethod);
+    public delegate void delegateDisconnected();
+
 }

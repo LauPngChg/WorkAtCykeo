@@ -61,11 +61,17 @@
     <Compile Include="WDH320S\API\Msg\MsgObject_Acquisition_Comparison_OneVsN.cs" />
     <Compile Include="WDH320S\API\Msg\MsgObject_Acquisition_Comparison_OneVsOne.cs" />
     <Compile Include="WDH320S\API\Msg\MsgObject_Acquisition_UpLoad_CreatTemplate.cs" />
+    <Compile Include="WDH320S\API\Msg\MsgObject_Check_FingerStatus.cs" />
     <Compile Include="WDH320S\API\Msg\MsgObject_Delete_AllFingerInformation.cs" />
     <Compile Include="WDH320S\API\Msg\MsgObject_Delete_OneFingerInformation.cs" />
     <Compile Include="WDH320S\API\Msg\MsgObject_DownLoad_SpecifyFingerInformationHeaderAndTemple.cs" />
+    <Compile Include="WDH320S\API\Msg\MsgObject_Get_CountOfRegistrationFinger.cs" />
+    <Compile Include="WDH320S\API\Msg\MsgObject_Get_DeviceSerialNum.cs" />
+    <Compile Include="WDH320S\API\Msg\MsgObject_Get_FirmwareVersion.cs" />
     <Compile Include="WDH320S\API\Msg\MsgObject_Registration_End.cs" />
     <Compile Include="WDH320S\API\Msg\MsgObject_Registration_SingleAcquisition.cs" />
+    <Compile Include="WDH320S\API\Msg\MsgObject_Set_BaudRate.cs" />
+    <Compile Include="WDH320S\API\Msg\MsgObject_Set_DeviceID.cs" />
     <Compile Include="WDH320S\API\Msg\MsgObject_UpLoad_AllFingerIDInformation.cs" />
     <Compile Include="WDH320S\API\Msg\MsgObject_UpLoad_SpecifyFingerInformationHeaderAndTemple.cs" />
     <Compile Include="WDH320S\API\Msg\MsgObject_UpLoad_SpecifyFingerSingleTemple.cs" />

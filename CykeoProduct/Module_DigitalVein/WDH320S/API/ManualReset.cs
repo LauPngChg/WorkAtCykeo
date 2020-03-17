@@ -1,11 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-
-namespace Module_DigitalVein.WDH320S.API
+﻿namespace Module_DigitalVein.WDH320S.API
 {
-    class ManualReset
+    using System.Threading;
+    public class ManualReset
     {
+        public ManualResetEvent ResetEvent;
+        public Msg.MessageObject msgMethod;
+        public ManualReset(bool status)
+        {
+            ResetEvent = new ManualResetEvent(status);
+        }
     }
 }

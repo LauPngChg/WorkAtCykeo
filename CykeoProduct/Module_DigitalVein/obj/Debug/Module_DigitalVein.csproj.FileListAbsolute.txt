@@ -11,3 +11,16 @@ C:\Users\CyKeo\Desktop\CykeoProduct\Module_DigitalVein\obj\Debug\Module_DigitalV
 C:\Users\CyKeo\Desktop\CykeoProduct\Module_DigitalVein\bin\Debug\PublicResources.dll
 C:\Users\CyKeo\Desktop\CykeoProduct\Module_DigitalVein\bin\Debug\PublicResources.pdb
 C:\Users\CyKeo\Desktop\CykeoProduct\Module_DigitalVein\obj\Debug\Module_DigitalVein.csproj.CopyComplete
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_DigitalVein\bin\Debug\Module_DigitalVein.dll
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_DigitalVein\bin\Debug\Module_DigitalVein.pdb
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_DigitalVein\bin\Debug\PublicResources.dll
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_DigitalVein\bin\Debug\PublicResources.pdb
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_DigitalVein\obj\Debug\Module_DigitalVein.csprojAssemblyReference.cache
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_DigitalVein\obj\Debug\WDH320S\TPage1.g.cs
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_DigitalVein\obj\Debug\Module_DigitalVein_MarkupCompile.cache
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_DigitalVein\obj\Debug\Module_DigitalVein_MarkupCompile.lref
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_DigitalVein\obj\Debug\WDH320S\TPage1.baml
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_DigitalVein\obj\Debug\Module_DigitalVein.g.resources
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_DigitalVein\obj\Debug\Module_DigitalVein.csproj.CopyComplete
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_DigitalVein\obj\Debug\Module_DigitalVein.dll
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_DigitalVein\obj\Debug\Module_DigitalVein.pdb

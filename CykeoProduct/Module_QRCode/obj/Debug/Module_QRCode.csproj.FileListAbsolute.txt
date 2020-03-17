@@ -10,3 +10,15 @@ C:\Users\CyKeo\Desktop\CykeoProduct\Module_QRCode\obj\Debug\Module_QRCode.pdb
 C:\Users\CyKeo\Desktop\CykeoProduct\Module_QRCode\bin\Debug\PublicResources.dll
 C:\Users\CyKeo\Desktop\CykeoProduct\Module_QRCode\bin\Debug\PublicResources.pdb
 C:\Users\CyKeo\Desktop\CykeoProduct\Module_QRCode\obj\Debug\Module_QRCode.csproj.CopyComplete
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\bin\Debug\Module_QRCode.dll
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\bin\Debug\Module_QRCode.pdb
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\bin\Debug\PublicResources.dll
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\bin\Debug\PublicResources.pdb
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\FreeDevelopement\TPage1.g.cs
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\Module_QRCode_MarkupCompile.cache
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\Module_QRCode_MarkupCompile.lref
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\FreeDevelopement\TPage1.baml
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\Module_QRCode.g.resources
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\Module_QRCode.csproj.CopyComplete
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\Module_QRCode.dll
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\Module_QRCode.pdb

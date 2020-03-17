@@ -66,5 +66,9 @@ namespace Module_DigitalVein.WDH320S.API
             }
             return revs;
         }
+        public static string Bytes_To_String(byte[] bytes)
+        {
+            return Encoding.Default.GetString(bytes, 0, bytes.Length);
+        }
     }
 }

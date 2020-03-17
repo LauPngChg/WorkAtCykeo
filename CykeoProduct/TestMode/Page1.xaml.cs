@@ -75,7 +75,7 @@ namespace TestMode
         #region 指静脉
         private void Label_MouseLeftButtonDown_5(object sender, MouseButtonEventArgs e)
         {
-            //this.pageContainer.Source = new Uri("/Module_DigitalVein/WDH320S/Page1.xaml", UriKind.RelativeOrAbsolute);
+            this.pageContainer.Source = new Uri("/Module_DigitalVein;component/WDH320S/TPage1.xaml", UriKind.RelativeOrAbsolute);
         }
         #endregion
         #region 摄像头

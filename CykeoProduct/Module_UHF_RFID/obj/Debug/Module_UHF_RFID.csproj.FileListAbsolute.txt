@@ -12,3 +12,17 @@ C:\Users\CyKeo\Desktop\CykeoProduct\Module_UHF_RFID\obj\Debug\Module_UHF_RFID.pd
 C:\Users\CyKeo\Desktop\CykeoProduct\Module_UHF_RFID\bin\Debug\PublicResources.dll
 C:\Users\CyKeo\Desktop\CykeoProduct\Module_UHF_RFID\bin\Debug\PublicResources.pdb
 C:\Users\CyKeo\Desktop\CykeoProduct\Module_UHF_RFID\obj\Debug\Module_UHF_RFID.csproj.CopyComplete
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\bin\Debug\Module_UHF_RFID.dll
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\bin\Debug\Module_UHF_RFID.pdb
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\bin\Debug\PublicResources.dll
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\bin\Debug\PublicResources.pdb
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\RD_Series\TPage1.g.cs
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\SK_Series\TPage1.g.cs
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\Module_UHF_RFID_MarkupCompile.cache
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\Module_UHF_RFID_MarkupCompile.lref
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\RD_Series\TPage1.baml
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\SK_Series\TPage1.baml
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\Module_UHF_RFID.g.resources
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\Module_UHF_RFID.csproj.CopyComplete
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\Module_UHF_RFID.dll
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\Module_UHF_RFID.pdb
