@@ -24,5 +24,22 @@ namespace Module_IDCard.HFR_G1_RS485.API.Msg
         public byte Bcc { get => bcc; set => bcc = value; }
         public byte[] ToBCC { get => toBCC; internal set => toBCC = value; }
         public byte[] FrameMsg { get => frameMsg; internal set => frameMsg = value; }
+
+        public MessageObject_Child(byte[] cmd)
+        {
+            int flag = 1;
+            this.address = cmd[flag++];
+            this.len = cmd[flag++];
+            this.status = (eReturnStatus)cmd[flag++];
+            this.data = (this.len - 1 == 0) ? null : DataConvert.ReadBytes(cmd, flag, this.len - 1);
+            flag += (this.len - 1);
+            this.bcc = cmd[flag++];
+            this.toBCC = DataConvert.ReadBytes(cmd, 1, cmd.Length - 3);
+            this.frameMsg = cmd;
+        }
+        public bool Check()
+        {
+            return this.bcc == DataConvert.BccCheck(this.toBCC);
+        }
     }
 }

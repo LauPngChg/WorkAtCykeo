@@ -23,17 +23,17 @@ namespace Module_IDCard.HFR_G1_RS485.API.Msg
         private MessageObject_Child child;
 
         public byte Address { get => address; set => address = value; }
-        public byte Len { get => len; set => len = value; }
-        public eCmdType CmdType { get => cmdType; set => cmdType = value; }
-        public byte[] Data { get => data; set => data = value; }
-        public byte Bcc { get => bcc; set => bcc = value; }
-        public byte[] ToBCC { get => toBCC; internal set => toBCC = value; }
-        public int ReturnValue { get => returnValue; internal set => returnValue = value; }
-        public string ReturnMsg { get => returnMsg; internal set => returnMsg = value; }
-        public MessageObject_Child Child { get => child; internal set => child = value; }
-
+        protected byte Len { get => len; set => len = value; }
+        protected eCmdType CmdType { get => cmdType; set => cmdType = value; }
+        protected byte[] Data { get => data; set => data = value; }
+        protected byte Bcc { get => bcc; set => bcc = value; }
+        protected byte[] ToBCC { get => toBCC;  set => toBCC = value; }
+        public int ReturnValue { get => returnValue;  set => returnValue = value; }
+        public string ReturnMsg { get => returnMsg;  set => returnMsg = value; }
+        public MessageObject_Child Child { get => child;  set => child = value; }
         public MessageObject()
         {
+            this.address = 0x00;
             child = null;
             data = null;
             returnValue = -1;
@@ -45,26 +45,31 @@ namespace Module_IDCard.HFR_G1_RS485.API.Msg
             {
                 if (receivedData == null)
                     throw new Exception("Null data !");
-                this.child = new MessageObject_Child();
-                this.child.ToBCC = new byte[receivedData.Length - 3];
-                Array.Copy(receivedData, 1, this.child.ToBCC, 0, this.child.ToBCC.Length);
-                int flag = 1;
-                this.child.Address = receivedData[flag++];
-                this.child.Len = receivedData[flag ++] ;
-                this.child.Status = (eReturnStatus)receivedData[flag ++] ;
-                this.child.Data = DataConvert.ReadBytes(receivedData, flag, this.child.Len - 1);
-                flag += this.child.Len - 1;
-                this.child.Bcc = receivedData[flag++];
+                this.child = new MessageObject_Child(receivedData);
             }
             catch
             { }
         }
-
         public virtual void CmdPacked()
         {
         }
         public virtual void CmdUnpacked()
         {
+            if (this.child != null)
+            {
+                if (this.child.Status == eReturnStatus.FAIL)
+                {
+                    this.ReturnValue = this.child.Data[0];
+                    this.ReturnMsg = this.child.Status.ToString() + "    " + (eReturnStatusType)this.child.Data[0];
+                }
+                else
+                {
+                    this.ReturnValue = 0;
+                    this.ReturnMsg = this.child.Status.ToString();
+                }
+            }
+            else
+                this.ReturnValue = -1;
         }
         public void CmdUnpacked(byte[] cmdData)
         {
@@ -73,29 +78,25 @@ namespace Module_IDCard.HFR_G1_RS485.API.Msg
         }
         public byte[] CmdToBytes()
         {
-            if (data == null)
-                return null;
-            this.frameMsg = new byte[data.Length + 6];
+            this.len = (byte)(this.data == null ? 1 : this.data.Length+1);
+            this.frameMsg = new byte[this.len + 5];
             int flag = 0;
             this.frameMsg[flag++] = 0xAA;
             this.frameMsg[flag++] = this.address;
-            this.frameMsg[flag++] = (byte)(this.data.Length + 1);
+            this.frameMsg[flag++] = this.len;
             this.frameMsg[flag++] =(byte) this.cmdType;
-            Array.Copy(this.data, 0, this.frameMsg, flag, this.data.Length);
-            flag += this.data.Length;
+            if (this.data != null)
+            {
+                Array.Copy(this.data, 0, this.frameMsg, flag, this.data.Length);
+                flag += this.data.Length;
+            }
             this.frameMsg[flag++] = DataConvert.BccCheck(DataConvert.ReadBytes(this.frameMsg, 1, flag));
             this.frameMsg[flag++] = 0xBB;
             return this.frameMsg;
         }
-
         public bool CheckData()
         {
-            if (this.toBCC != null)
-            {
-                if (DataConvert.BccCheck(DataConvert.ReadBytes(this.toBCC, 0, this.toBCC.Length)) == this.bcc)
-                    return true;
-            }
-            return false;
+            return this.toBCC != null? DataConvert.BccCheck(DataConvert.ReadBytes(this.toBCC, 0, this.toBCC.Length)) == this.bcc : false;
         }
         public string ToKey()
         {

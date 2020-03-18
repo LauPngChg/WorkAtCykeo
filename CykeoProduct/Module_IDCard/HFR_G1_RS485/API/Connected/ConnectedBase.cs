@@ -45,7 +45,7 @@ namespace Module_IDCard.HFR_G1_RS485.API.Connected
             }
             catch { }
         }
-        protected void CallDelegateReceived(Msg.MessageObject messageObject)
+        protected void CallDelegateReceived(Msg.MessageObject_Child messageObject)
         {
             try
             {
@@ -104,8 +104,8 @@ namespace Module_IDCard.HFR_G1_RS485.API.Connected
                 }
                 if (receivedBytes != null)
                 {
-                    Msg.MessageObject msg = new Msg.MessageObject(receivedBytes);
-                    if (msg.CheckData())
+                    Msg.MessageObject_Child msg = new Msg.MessageObject_Child(receivedBytes);
+                    if (msg.Check())
                     {
                         CallDelegateReceived(msg);
                     }

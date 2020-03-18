@@ -19,9 +19,33 @@ namespace Module_IDCard.HFR_G1_RS485
     /// </summary>
     public partial class TPage1 : Page
     {
+        API.Connected.ConnectedMethod connected;
         public TPage1()
         {
             InitializeComponent();
+            connected = new API.Connected.ConnectedMethod();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            if (connected.OpenRs232("COM8:9600"))
+            {
+                this.cc.Content = "连接成功";
+            }
+            else
+            {
+                connected.Close();
+                this.cc.Content = "已关闭";
+            }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            API.Msg.MsgObject_MifaAppCmd_Read cc = new API.Msg.MsgObject_MifaAppCmd_Read();
+            
+            connected.SendSyncMsg(cc);
+            if (cc.ReturnValue == 0)
+                this.cc.Content = cc.GetCardSerial[0].ToString("X2") +"-"+ cc.GetCardSerial[1].ToString("X2") + "-" + cc.GetCardSerial[2].ToString("X2") + "-" + cc.GetCardSerial[3].ToString("X2") ;
+        }//99 99 E5 39
     }
 }

@@ -4,7 +4,7 @@
     public class ManualReset
     {
         public ManualResetEvent ResetEvent;
-        public Msg.MessageObject msgMethod;
+        public Msg.MessageObject_Child msgMethod;
         public ManualReset(bool status)
         {
             ResetEvent = new ManualResetEvent(status);

@@ -135,8 +135,8 @@ namespace Module_ControlBoard.LCB_G1
 
         private void checkboxLock1_Checked(object sender, RoutedEventArgs e)
         {
-            API.Msg.MsgObject_OpenLock locked = new API.Msg.MsgObject_OpenLock() { Address = 2};
-            locked.LockID = API.Msg.eLockID.Lock2;
+            API.Msg.MsgObject_OpenLock locked = new API.Msg.MsgObject_OpenLock() { Address = 1};
+            locked.LockID = API.Msg.eLockID.Lock1;
             connected.SendSyncMsg(locked);
             test.Text = locked.ReturnMsg;
         }
@@ -144,6 +144,12 @@ namespace Module_ControlBoard.LCB_G1
         private void checkboxLock1_Unchecked(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void checkboxLock2_Checked(object sender, RoutedEventArgs e)
+        {
+            API.Msg.MsgObject_GetLockStatus locked = new API.Msg.MsgObject_GetLockStatus() { Address = 1 };
+            connected.SendSyncMsg(locked);
         }
     }
 }

@@ -64,7 +64,7 @@ namespace TestMode
         #region 高频卡
         private void Label_MouseLeftButtonDown_3(object sender, MouseButtonEventArgs e)
         {
-            //this.pageContainer.Source = new Uri("/Module_IDcard/RS485/Page1.xaml", UriKind.RelativeOrAbsolute);
+            this.pageContainer.Source = new Uri("/Module_IDcard;component/HFR_G1_RS485/TPage1.xaml", UriKind.RelativeOrAbsolute);
         }
         private void Label_MouseLeftButtonDown_4(object sender, MouseButtonEventArgs e)
         {

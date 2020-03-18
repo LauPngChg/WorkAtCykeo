@@ -57,6 +57,25 @@
     <Compile Include="HFR_G1_RS485\API\Msg\eReturnStatus.cs" />
     <Compile Include="HFR_G1_RS485\API\Msg\MessageObject.cs" />
     <Compile Include="HFR_G1_RS485\API\Msg\MessageObject_Child.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_ISO14443TypeA_AntiCollision.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_SysCmd_ControlBuzzer.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_SysCmd_ControlLED.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_SysCmd_GetSerialNum.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_ISO14443TypeA_Halt.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_MifaAppCmd_Decrement.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_MifaAppCmd_InitVal.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_MifaAppCmd_ISO14443_TypeA_Transfer_Command.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_MifaAppCmd_Read.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_MifaAppCmd_SNR.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_MifaAppCmd_Write.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_SysCmd_ReadUserInfo.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_ISO14443TypeA_RequestCard.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_ISO14443TypeA_Select.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_SysCmd_SetAddress.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_SysCmd_SetBaudrate.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_SysCmd_SetSerialNum.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_SysCmd_GetVersionNum.cs" />
+    <Compile Include="HFR_G1_RS485\API\Msg\MsgObject_SysCmd_WriteUserInfo.cs" />
     <Compile Include="HFR_G1_RS485\API\Msg\RingBuffer.cs" />
     <Compile Include="HFR_G1_RS485\TPage1.xaml.cs">
       <DependentUpon>TPage1.xaml</DependentUpon>

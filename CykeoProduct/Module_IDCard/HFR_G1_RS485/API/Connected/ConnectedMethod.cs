@@ -18,7 +18,7 @@ namespace Module_IDCard.HFR_G1_RS485.API.Connected
         private string ReaderName;
         private Dictionary<string, ManualReset> dictionary;
         public byte Address { get; set; }
-
+        private string key;
         public ConnectedMethod()
         {
             timeOut = 3000;
@@ -83,6 +83,7 @@ namespace Module_IDCard.HFR_G1_RS485.API.Connected
                     dictionary[key].msgMethod = null;
                     dictionary[key].ResetEvent.Reset();
                 }
+                this.key = key;
                 WaitHandle[] waitHandles = new WaitHandle[] { dictionary[key].ResetEvent };
                 BaseConnect.SendMsg(msgObject);
                 int num = WaitHandle.WaitAny(waitHandles, tiemOut, false);
@@ -90,7 +91,7 @@ namespace Module_IDCard.HFR_G1_RS485.API.Connected
                 {
                     if ((num == 0) && (dictionary[key].msgMethod != null))
                     {
-                        msgObject.FrameMsg = dictionary[key].msgMethod.FrameMsg;
+                        msgObject.Child = dictionary[key].msgMethod;
                         msgObject.CmdUnpacked(dictionary[key].msgMethod.Data);
                     }
                 }
@@ -112,43 +113,17 @@ namespace Module_IDCard.HFR_G1_RS485.API.Connected
             }
         }
 
-        private void SortMessage(Msg.MessageObject msgObject)
+        private void SortMessage(Msg.MessageObject_Child msgObject)
         {
             try
             {
                 if (msgObject == null)
                     return;
-                byte head = (byte)(msgObject.CmdType & 0xF0);
-                if (head == 0xC0)
+                msgObject.Key = this.key ;
+                if (dictionary.ContainsKey(msgObject.Key))
                 {
-                    if (msgObject.CmdType == 0xC3)
-                    {
-                        Msg.MsgObject_GetLockStatus getLockStatus = new Msg.MsgObject_GetLockStatus
-                        {
-                            FrameMsg = msgObject.FrameMsg,
-                            Data = msgObject.Data
-                        };
-                        getLockStatus.CmdUnpacked();
-                        if (dSwitchLock != null)
-                            dSwitchLock(getLockStatus);
-                        return;
-                    }
-                    byte key = msgObject.ToKey();
-                    if (dictionary.ContainsKey(key))
-                    {
-                        dictionary[key].msgMethod = msgObject;
-                        dictionary[key].ResetEvent.Set();
-                    }
-                }
-                else if (head == 0xF0)
-                {
-                    Msg.MsgObject_ErrorMsg error = new Msg.MsgObject_ErrorMsg
-                    {
-                        CmdType = msgObject.CmdType
-                    };
-                    error.CmdUnpacked();
-                    if (dErrorMsg != null)
-                        dErrorMsg(error);
+                    dictionary[key].msgMethod = msgObject;
+                    dictionary[key].ResetEvent.Set();
                 }
             }
             catch { }

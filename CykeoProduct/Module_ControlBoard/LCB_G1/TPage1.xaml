@@ -44,7 +44,7 @@
                         <RowDefinition Height="1*"/>
                     </Grid.RowDefinitions>
                     <CheckBox  x:Name="checkboxLock1" Style="{StaticResource LockSwitch}" HorizontalAlignment="Left" VerticalAlignment="Bottom"  Grid.Row="0" Grid.Column="0" Margin="20,20,0,0" Checked="checkboxLock1_Checked"     />
-                    <CheckBox x:Name="checkboxLock2" Style="{StaticResource LockSwitch}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="1" Margin="20,20,0,0"></CheckBox>
+                    <CheckBox x:Name="checkboxLock2" Style="{StaticResource LockSwitch}" HorizontalAlignment="Left" VerticalAlignment="Bottom" Grid.Row="0" Grid.Column="1" Margin="20,20,0,0" Checked="checkboxLock2_Checked"></CheckBox>
                     <TextBlock Text="{DynamicResource LCB-0005}" Grid.Column="0" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,0,0,0"></TextBlock>
                     <TextBlock  Text="{DynamicResource LCB-0006}"  Grid.Column="1" Grid.Row="1" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="20,0,0,0"></TextBlock>
                 </Grid>
