@@ -46,6 +46,23 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="LCB_B1\API\Connected\ConnectedBase.cs" />
+    <Compile Include="LCB_B1\API\Connected\ConnectedMethod.cs" />
+    <Compile Include="LCB_B1\API\Connected\ConnectedTypeSerial.cs" />
+    <Compile Include="LCB_B1\API\DataConvert.cs" />
+    <Compile Include="LCB_B1\API\DelegateEvents.cs" />
+    <Compile Include="LCB_B1\API\ManualReset.cs" />
+    <Compile Include="LCB_B1\API\Msg\eLED.cs" />
+    <Compile Include="LCB_B1\API\Msg\eLock.cs" />
+    <Compile Include="LCB_B1\API\Msg\eMode.cs" />
+    <Compile Include="LCB_B1\API\Msg\eSwitch.cs" />
+    <Compile Include="LCB_B1\API\Msg\MessageObject.cs" />
+    <Compile Include="LCB_B1\API\Msg\MsgObject_Get_LockStatus.cs" />
+    <Compile Include="LCB_B1\API\Msg\MsgObject_Switch_LED.cs" />
+    <Compile Include="LCB_B1\API\Msg\MsgObject_Switch_Lock.cs" />
+    <Compile Include="LCB_B1\API\Msg\MsgObject_Switch_Mode.cs" />
+    <Compile Include="LCB_B1\API\Msg\NotifyLockStatus.cs" />
+    <Compile Include="LCB_B1\API\Msg\RingBuffer.cs" />
     <Compile Include="LCB_B1\LPage1.xaml.cs">
       <DependentUpon>LPage1.xaml</DependentUpon>
     </Compile>

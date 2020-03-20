@@ -25,6 +25,10 @@ C:\Users\CyKeo\Desktop\CykeoProduct\TestMode\obj\Debug\TestMode.g.resources
 C:\Users\CyKeo\Desktop\CykeoProduct\TestMode\obj\Debug\TestMode.csproj.CopyComplete
 C:\Users\CyKeo\Desktop\CykeoProduct\TestMode\obj\Debug\TestMode.dll
 C:\Users\CyKeo\Desktop\CykeoProduct\TestMode\obj\Debug\TestMode.pdb
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\obj\Debug\TestMode.csprojAssemblyReference.cache
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\obj\Debug\Page1.g.cs
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\obj\Debug\TestMode_MarkupCompile.cache
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\obj\Debug\TestMode_MarkupCompile.lref
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\bin\Debug\TestMode.dll
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\bin\Debug\TestMode.pdb
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\bin\Debug\Module_Camera.dll
@@ -43,12 +47,9 @@ C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\bin\Debug\Module_IDCard
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\bin\Debug\Module_QRCode.pdb
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\bin\Debug\Module_UHF_RFID.pdb
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\bin\Debug\PublicResources.pdb
-C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\obj\Debug\TestMode.csprojAssemblyReference.cache
-C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\obj\Debug\Page1.g.cs
-C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\obj\Debug\TestMode_MarkupCompile.cache
-C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\obj\Debug\TestMode_MarkupCompile.lref
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\obj\Debug\Page1.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\obj\Debug\TestMode.g.resources
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\obj\Debug\TestMode.csproj.CoreCompileInputs.cache
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\obj\Debug\TestMode.csproj.CopyComplete
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\obj\Debug\TestMode.dll
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\TestMode\obj\Debug\TestMode.pdb

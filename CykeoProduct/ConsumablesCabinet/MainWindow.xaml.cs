@@ -35,6 +35,8 @@ namespace ConsumablesCabinet
         bool IsChs;
         public MainWindow()
         {
+            /*AllowsTransparency = "True"*/
+            this.WindowStyle = WindowStyle.None;
             InitializeComponent();
             this.MouseLeftButtonDown += WindowMove;
             this.checkBoxMode.Click += ModeSwitchFun;
@@ -44,7 +46,7 @@ namespace ConsumablesCabinet
             this.BtnConnect.MouseLeftButtonDown += Connected;
             Init();            
         }
-        private void WindowMove(object sender, MouseButtonEventArgs e) => this.DragMove();
+        private void WindowMove(object sender, MouseButtonEventArgs e) { try { this.DragMove(); } catch { } }
         private void ModeSwitchFun(object sender, RoutedEventArgs e)
         {
             if (((CheckBox)sender).IsChecked == true)
@@ -77,7 +79,7 @@ namespace ConsumablesCabinet
                 this.appName.Text = this.Resources["THM-0002"].ToString();//
         }
         private void ShutDown(object sender, MouseButtonEventArgs e) => this.Close();
-        private void ShowLog(object o, MouseButtonEventArgs e) { }
+        private void ShowLog(object o, MouseButtonEventArgs e) { this.pageContainer.Source = new Uri("/Module_Camera;component/HiKvison/TPage1.xaml", UriKind.RelativeOrAbsolute); }
         private void Connected(object o, MouseButtonEventArgs e) { SwitchMode(showMainPage = eShowMainPage.eLink);}
         private void Init()
         {
@@ -109,7 +111,7 @@ namespace ConsumablesCabinet
                     case eShowMainPage.eTest:
                         Dpage1 = null;
                         LPage1 = null;
-                        this.pageContainer.Content = Tpage1 = new TestMode.Page1();
+                        this.pageContainer.Content = Tpage1 = new TestMode.Page1(this);
                         break;
                     case eShowMainPage.eDisplay:
                         Tpage1 = null;

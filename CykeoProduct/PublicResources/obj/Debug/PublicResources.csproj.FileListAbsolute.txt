@@ -23,7 +23,6 @@ C:\Users\CyKeo\Desktop\CykeoProduct\PublicResources\obj\Debug\PublicResources.pd
 C:\Users\CyKeo\Desktop\CykeoProduct\PublicResources\obj\Debug\PublicResources.csprojAssemblyReference.cache
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\PublicResources\bin\Debug\PublicResources.dll
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\PublicResources\bin\Debug\PublicResources.pdb
-C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\PublicResources\obj\Debug\PublicResources.csprojAssemblyReference.cache
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\PublicResources\obj\Debug\styles\BreathLightCheckBox.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\PublicResources\obj\Debug\styles\MainTabControlStyle.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\PublicResources\obj\Debug\themes\BureauBlack.baml
@@ -42,5 +41,7 @@ C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\PublicResources\obj\Debug\lang\z
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\PublicResources\obj\Debug\styles\LockSwitchCheckBox.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\PublicResources\obj\Debug\styles\SliderCheckBoxStyle.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\PublicResources\obj\Debug\PublicResources.g.resources
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\PublicResources\obj\Debug\PublicResources.csproj.CoreCompileInputs.cache
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\PublicResources\obj\Debug\PublicResources.dll
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\PublicResources\obj\Debug\PublicResources.pdb
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\PublicResources\obj\Debug\PublicResources.csprojAssemblyReference.cache

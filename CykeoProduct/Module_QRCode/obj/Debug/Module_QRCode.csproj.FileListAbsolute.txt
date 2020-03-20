@@ -19,6 +19,7 @@ C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\Module_Q
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\Module_QRCode_MarkupCompile.lref
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\FreeDevelopement\TPage1.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\Module_QRCode.g.resources
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\Module_QRCode.csproj.CoreCompileInputs.cache
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\Module_QRCode.csproj.CopyComplete
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\Module_QRCode.dll
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_QRCode\obj\Debug\Module_QRCode.pdb

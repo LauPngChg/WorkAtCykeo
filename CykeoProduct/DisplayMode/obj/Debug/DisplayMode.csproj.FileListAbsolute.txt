@@ -25,6 +25,10 @@ C:\Users\CyKeo\Desktop\CykeoProduct\DisplayMode\obj\Debug\DisplayMode.g.resource
 C:\Users\CyKeo\Desktop\CykeoProduct\DisplayMode\obj\Debug\DisplayMode.csproj.CopyComplete
 C:\Users\CyKeo\Desktop\CykeoProduct\DisplayMode\obj\Debug\DisplayMode.dll
 C:\Users\CyKeo\Desktop\CykeoProduct\DisplayMode\obj\Debug\DisplayMode.pdb
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\obj\Debug\DisplayMode.csprojAssemblyReference.cache
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\obj\Debug\Page1.g.cs
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\obj\Debug\DisplayMode_MarkupCompile.cache
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\obj\Debug\DisplayMode_MarkupCompile.lref
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\bin\Debug\DisplayMode.dll
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\bin\Debug\DisplayMode.pdb
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\bin\Debug\Module_Camera.dll
@@ -43,12 +47,9 @@ C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\bin\Debug\Module_IDC
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\bin\Debug\Module_QRCode.pdb
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\bin\Debug\Module_UHF_RFID.pdb
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\bin\Debug\PublicResources.pdb
-C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\obj\Debug\DisplayMode.csprojAssemblyReference.cache
-C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\obj\Debug\Page1.g.cs
-C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\obj\Debug\DisplayMode_MarkupCompile.cache
-C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\obj\Debug\DisplayMode_MarkupCompile.lref
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\obj\Debug\Page1.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\obj\Debug\DisplayMode.g.resources
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\obj\Debug\DisplayMode.csproj.CoreCompileInputs.cache
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\obj\Debug\DisplayMode.csproj.CopyComplete
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\obj\Debug\DisplayMode.dll
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\DisplayMode\obj\Debug\DisplayMode.pdb

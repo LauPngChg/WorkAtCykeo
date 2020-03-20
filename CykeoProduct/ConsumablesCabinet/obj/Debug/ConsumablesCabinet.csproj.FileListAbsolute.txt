@@ -34,6 +34,10 @@ C:\Users\CyKeo\Desktop\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabi
 C:\Users\CyKeo\Desktop\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabinet.csproj.CopyComplete
 C:\Users\CyKeo\Desktop\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabinet.exe
 C:\Users\CyKeo\Desktop\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabinet.pdb
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\MainWindow.g.cs
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\App.g.cs
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabinet_MarkupCompile.cache
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabinet_MarkupCompile.lref
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\bin\Debug\ConsumablesCabinet.exe.config
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\bin\Debug\ConsumablesCabinet.exe
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\bin\Debug\ConsumablesCabinet.pdb
@@ -58,15 +62,12 @@ C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\bin\Debug\Mod
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\bin\Debug\Module_Camera.pdb
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\bin\Debug\Module_UHF_RFID.pdb
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabinet.csprojAssemblyReference.cache
-C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\MainWindow.g.cs
-C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\App.g.cs
-C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabinet_MarkupCompile.cache
-C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabinet_MarkupCompile.lref
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\App.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\MainWindow.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabinet.g.resources
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabinet.Properties.Resources.resources
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabinet.csproj.GenerateResource.cache
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabinet.csproj.CoreCompileInputs.cache
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabinet.csproj.CopyComplete
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabinet.exe
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\ConsumablesCabinet\obj\Debug\ConsumablesCabinet.pdb

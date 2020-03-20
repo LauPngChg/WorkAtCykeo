@@ -6,9 +6,10 @@
         xmlns:local="clr-namespace:ConsumablesCabinet" 
         mc:Ignorable="d"
         Title="MainWindow"   WindowStartupLocation="CenterScreen"
-        AllowsTransparency="True" WindowStyle="None"
-        Width="1200" Height="900"
+        
+        Width="1200" Height="900" 
         FontSize="15" FontFamily="微软雅黑"  Background="{x:Null}" >
+    <!--AllowsTransparency="True" WindowStyle="None"-->
     <Window.Resources>
         <ResourceDictionary>
             <Storyboard x:Key="sb">

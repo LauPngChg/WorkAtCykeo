@@ -4,7 +4,7 @@
 library
 C#
 .cs
-C:\Users\CyKeo\Desktop\CykeoProduct\PublicResources\obj\Debug\
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\PublicResources\obj\Debug\
 PublicResources
 none
 false
@@ -16,5 +16,5 @@ DEBUG;TRACE
 13-761804836
 lang\en-us.xaml;lang\zh-cn.xaml;styles\BreathLightCheckBox.xaml;styles\LockSwitchCheckBox.xaml;styles\MainTabControlStyle.xaml;styles\SliderCheckBoxStyle.xaml;themes\BureauBlack.xaml;themes\DavesGlossyControls.xaml;themes\ExpressionDark.xaml;themes\MyTheme\Theme.xaml;themes\ShinyRed.xaml;themes\TwilightBlue.xaml;themes\UXMusingsBubblyBlue.xaml;themes\UXMusingsRed.xaml;themes\WhistlerBlue.xaml;
 
-True
+False
 

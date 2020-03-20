@@ -1,14 +1,47 @@
-﻿<Page x:Class="Module_Camera.HiKvison.TPage1"
-      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-      xmlns:local="clr-namespace:Module_Camera.HiKvison"
-      mc:Ignorable="d" 
-      d:DesignHeight="450" d:DesignWidth="800"
-      Title="TPage1">
-
-    <Grid>
-        
+﻿<Window x:Class="Module_Camera.HiKvison.TPage1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:wf="clr-namespace:System.Windows.Forms;assembly=System.Windows.Forms"
+        xmlns:local="clr-namespace:Module_Camera.HiKvison"
+        mc:Ignorable="d"  Title="TPage1"  Height="600" Width="800"
+        >
+    <!--AllowsTransparency="True" WindowStyle="None"-->
+    <!--<Frame x:Name="pageContainer" ScrollViewer.CanContentScroll="True" NavigationUIVisibility="Hidden" Margin="0,75,0,0" />-->
+    <!--<Image x:Name="CC" HorizontalAlignment="Left" Height="351" Margin="10,58,0,0" VerticalAlignment="Top" Width="772" Stretch="Fill" />-->
+    <!--<WindowsFormsHost Background="LightBlue" HorizontalAlignment="Left" Height="345" VerticalAlignment="Top" Width="792" Grid.ColumnSpan="2">
+            <wf:PictureBox x:Name="RealPlayWnd" SizeMode ="CenterImage" ImageLocation="../Debug/cc.png"  ></wf:PictureBox>
+        </WindowsFormsHost>-->
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="18*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <WindowsFormsHost >
+            <wf:PictureBox x:Name="image"/>
+        </WindowsFormsHost>
+        <Grid  Grid.Column="1" Background="#FF333333">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="3*"/>
+                <RowDefinition Height="1*"/>
+                <RowDefinition Height="3*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Row="0">
+                <Image x:Name="photo"   Source="/PublicResources;component/images/photo.png" Width="80" Height="60"  Margin="0 30"   Cursor="Hand"/>
+                <Image x:Name="video"  Source="/PublicResources;component/images/video.png"  Width="80" Height="60"     Margin="0 30" Cursor="Hand"/>
+            </StackPanel>
+            <StackPanel Grid.Row="2" VerticalAlignment="Bottom" >
+                <TextBlock Text="捉拍机IP：" Foreground="Snow" Margin="5 30 0 0"/>
+                <TextBox x:Name="ip" Height="18" Text="192.168.1.64" Margin="5 0 20 20"/>
+                <TextBlock Text="捉拍机Port：" Foreground="Snow" Margin="5 0 0 0"/>
+                <TextBox x:Name="port" Height="18" Text="8000"  Margin="5 0 20 20"/>
+                <TextBlock Text="捉拍机User：" Foreground="Snow" Margin="5 0 0 0"/>
+                <TextBox x:Name="name" Height="18" Text="admin"  Margin="5 0 20 20"/>
+                <TextBlock Text="捉拍机Password：" Foreground="Snow" Margin="5 0 0 0"/>
+                <PasswordBox x:Name="password" Height="18" PasswordChar="*" DataContext="sk123456" Password="sk123456"  Margin="5 0 20 20"/>
+                <Button x:Name="login" Content="登录" Height="26" Margin="5 5 20 50"/>
+            </StackPanel>
+        </Grid>
     </Grid>
-</Page>
+</Window>

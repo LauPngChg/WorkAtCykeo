@@ -19,6 +19,7 @@ C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_Connected\obj\Debug\Modul
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_Connected\obj\Debug\Module_Connected_MarkupCompile.lref
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_Connected\obj\Debug\Page1.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_Connected\obj\Debug\Module_Connected.g.resources
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_Connected\obj\Debug\Module_Connected.csproj.CoreCompileInputs.cache
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_Connected\obj\Debug\Module_Connected.csproj.CopyComplete
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_Connected\obj\Debug\Module_Connected.dll
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_Connected\obj\Debug\Module_Connected.pdb

@@ -23,6 +23,7 @@ C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\Module
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\RD_Series\TPage1.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\SK_Series\TPage1.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\Module_UHF_RFID.g.resources
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\Module_UHF_RFID.csproj.CoreCompileInputs.cache
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\Module_UHF_RFID.csproj.CopyComplete
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\Module_UHF_RFID.dll
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_UHF_RFID\obj\Debug\Module_UHF_RFID.pdb

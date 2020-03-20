@@ -33,6 +33,7 @@ C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_ControlBoard\obj\Debug\LC
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_ControlBoard\obj\Debug\LCB_G1\LPage1.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_ControlBoard\obj\Debug\LCB_G1\TPage1.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_ControlBoard\obj\Debug\Module_ControlBoard.g.resources
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_ControlBoard\obj\Debug\Module_ControlBoard.csproj.CoreCompileInputs.cache
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_ControlBoard\obj\Debug\Module_ControlBoard.csproj.CopyComplete
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_ControlBoard\obj\Debug\Module_ControlBoard.dll
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_ControlBoard\obj\Debug\Module_ControlBoard.pdb

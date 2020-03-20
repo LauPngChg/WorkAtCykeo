@@ -25,6 +25,7 @@ C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_IDCard\obj\Debug\Module_I
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_IDCard\obj\Debug\HFR_G1_RS485\TPage1.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_IDCard\obj\Debug\HFR_G2_USB\TPage1.baml
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_IDCard\obj\Debug\Module_IDCard.g.resources
+C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_IDCard\obj\Debug\Module_IDCard.csproj.CoreCompileInputs.cache
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_IDCard\obj\Debug\Module_IDCard.csproj.CopyComplete
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_IDCard\obj\Debug\Module_IDCard.dll
 C:\Users\CyKeo\Desktop\WorkAtCykeo\CykeoProduct\Module_IDCard\obj\Debug\Module_IDCard.pdb

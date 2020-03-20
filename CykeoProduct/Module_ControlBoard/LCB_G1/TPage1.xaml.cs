@@ -28,6 +28,8 @@ namespace Module_ControlBoard.LCB_G1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
+            MessageBox.Show((0xFD ^ 0xFF).ToString("X2"));
+            return;
             if (connected.OpenRs232("COM8:115200"))
             {
                 MessageBox.Show("连接成功");

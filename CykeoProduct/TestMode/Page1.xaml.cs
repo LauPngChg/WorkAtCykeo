@@ -26,14 +26,17 @@ namespace TestMode
         public Module_DigitalVein.WDH320S.TPage1 Test_DigitalVein_WDH320S;
         public Module_QRCode.FreeDevelopement.TPage1 Test_QRCode_FreeDevelopment;
         public Module_Camera.LongSe.TPage1 Test_Camera_LongSe;
-        public Module_Camera.HiKvison.TPage1 Test_Camera_HiKvison;
+        public Module_Camera.HiKvison.Page1 Test_Camera_HiKvison;
         public Module_UHF_RFID.SK_Series.TPage1 Test_UHF_RFID_SK_Series;
         public Module_UHF_RFID.RD_Series.TPage1 Test_UHF_RFID_RD_Series;
         public PublicResources.eModule TestModule;
-        public Page1()
+        Window window;
+        public Page1(Window window)
         {
             InitializeComponent();
+            this.window = window;
             TestModule = PublicResources.eModule.ControlBoard_LCB_B1;
+            Test_Camera_HiKvison = new Module_Camera.HiKvison.Page1();
         }
 
 
@@ -53,7 +56,7 @@ namespace TestMode
         #region 锁控板
         private void Label_MouseLeftButtonDown_1(object sender, MouseButtonEventArgs e)
         {
-            //this.pageContainer.Source = new Uri("/Module_ControlBoard/LCB_B1/TPage1.xaml", UriKind.RelativeOrAbsolute);
+            this.pageContainer.Source = new Uri("/Module_ControlBoard;component/LCB_B1/TPage1.xaml", UriKind.RelativeOrAbsolute);
         }
         private void Label_MouseLeftButtonDown_2(object sender, MouseButtonEventArgs e)
         {
@@ -81,11 +84,14 @@ namespace TestMode
         #region 摄像头
         private void Label_MouseLeftButtonDown_7(object sender, MouseButtonEventArgs e)
         {
-            //this.pageContainer.Source = new Uri("/Module_Camera/LongSe/Page1.xaml", UriKind.RelativeOrAbsolute);
+            this.pageContainer.Source = new Uri("/Module_Camera;component/LongSe/TPage1.xaml", UriKind.RelativeOrAbsolute);
         }
         private void Label_MouseLeftButtonDown_8(object sender, MouseButtonEventArgs e)
         {
-            //this.pageContainer.Source = new Uri("/Module_Camera/HiKvison/Page1.xaml", UriKind.RelativeOrAbsolute);
+            //var cc = new Module_Camera.HiKvison.TPage1();
+            //cc.ShowDialog();
+            this.pageContainer.Content = Test_Camera_HiKvison;
+            //this.pageContainer.Source = new Uri("/Module_Camera;component/HiKvison/Page1.xaml", UriKind.RelativeOrAbsolute);
         }
         #endregion
         #region 二维码
