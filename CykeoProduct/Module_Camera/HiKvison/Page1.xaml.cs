@@ -235,7 +235,6 @@ namespace Module_Camera.HiKvison
             //录像保存路径和文件名 the path and file name to save
             string sVideoFileName;
             sVideoFileName = "test.mp4";
-
             if (m_bRecord == false)
             {
                 //强制I帧 Make one key frame
